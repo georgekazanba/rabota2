@@ -3,33 +3,6 @@
 <head>
 	<!--Ссылка на файл со свойствами сайта-->
 	<link rel="stylesheet" href="master.css">
-	<title>MyGiro: гироскутеры, электросамокаты, сигвеи</title>
-	<!-- Yandex.Metrika counter -->
-	<script type="text/javascript">
-		(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||
-	[]).push(arguments)};
-		m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)
-	[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
-		(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", 
-	"ym");
-		ym(85173391, "init", {
-        		clickmap:true,
-        		trackLinks:true,
-        		accurateTrackBounce:true
-		});
-	</script>
-	<noscript><div><img src="https://mc.yandex.ru/watch/85173391"
-	style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-	<!-- /Yandex.Metrika counter -->
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-TQTSGC9FVQ"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag(){dataLayer.push(arguments);}
-		gtag('js', new Date());
-
-		gtag('config', 'G-TQTSGC9FVQ');
-	</script>
 </head>
 <body>
 	<header>
@@ -45,47 +18,58 @@
 	</header>
 	<!--Слайдер-->
 	<div class="carousel-wrapper">
-		<span id="item-1"></span>
-		<span id="item-2"></span>
-		<span id="item-3"></span>
-		<span id="item-4"></span>
+		<span id="item-1" width=1600px></span>
+		<span id="item-2" width=1600px></span>
+		<span id="item-3" width=1600px></span>
+		<span id="item-4" width=1600px></span>
 		<!-- 1й элемент слайдера -->
 		<div class="carousel-item item-1">
-		  <center><p>Мы обслуживаем одинаково качественно как своих гарантийных клиентов, так и сторонние заказы.</p></center>
-		  <a class="arrow arrow-prev" href="#item-4"></a>
-		  <a class="arrow arrow-next" href="#item-2"></a>
+			<p class="car-text">Мы обслуживаем одинаково качественно как своих гарантийных клиентов, так и сторонние заказы.</p>
+			<a class="arrow arrow-prev" href="#item-4"></a>
+			<a class="arrow arrow-next" href="#item-2"></a>
 		</div>
 		<!-- 2й элемент слайдера -->
 		<div class="carousel-item item-2">
-		  <center><p>Если деталь сломалась — в нашем центре ее не будут ремонтировать, а сразу заменят на новую.</p></center>
-		  <a class="arrow arrow-prev" href="#item-1"></a>
-		  <a class="arrow arrow-next" href="#item-3"></a>
+			<p class="car-text">Если деталь сломалась — в нашем центре ее не будут ремонтировать, а сразу заменят на новую.</p>
+			<a class="arrow arrow-prev" href="#item-1"></a>
+			<a class="arrow arrow-next" href="#item-3"></a>
 		</div>
 		<!-- 3й элемент слайдера -->
 		<div class="carousel-item item-3">
-		  <center><p>Мы работаем с крупной сетью сервисных центров, ее филиалы находятся в 70 городах России.</p></center>
-		  <a class="arrow arrow-prev" href="#item-2"></a>
-		  <a class="arrow arrow-next" href="#item-4"></a>
+			<p class="car-text">Мы работаем с крупной сетью сервисных центров, ее филиалы находятся в 70 городах России.</p>
+			<a class="arrow arrow-prev" href="#item-2"></a>
+			<a class="arrow arrow-next" href="#item-4"></a>
 		</div>
 		<!-- 3й элемент слайдера -->
 		<div class="carousel-item item-4">
-		  <center><p>Гарантия действует в течении 3 лет!</p></center>
-		  <a class="arrow arrow-prev" href="#item-3"></a>
-		  <a class="arrow arrow-next" href="#item-1"></a>
+			<p class="car-text">Гарантия действует в течении 3 лет!</p>
+			<a class="arrow arrow-prev" href="#item-3"></a>
+			<a class="arrow arrow-next" href="#item-1"></a>
+		</div>
+	</div>
+	<!--Блоки с информацией о товарах-->
+	<div class="wrapper">
+		<img src="img/elsam.jpg" width="425px" height="425px" class="content">
+		<div class="sidebar">
+			<h2 class="h2">Электросамокат</h2>
+			<p class="p">Электросамокат - современный вариант простого самоката. Для того чтобы на нем кататься, нужно всего один раз оттолкнуться ногой от земли, обеспечив стартовое ускорение. Дальше устройство будет везти хозяина самостоятельно за счет встроенного электромотора. Если выбирать между моноколесом или электросамокатом, последний будет гораздо безопаснее в эксплуатации за счет наличия 2 колес (т.е. 2 точек опоры) и ручки для опоры руками.</p>
+		</div>	
+	</div>
+	<div class="wrapper">
+		<img src="img/tov1.jpg" width="425px" height="425px" class="content">
+		<div class="sidebar">
+			<h2 class="h2">Гироскутер</h2>
+			<p class="p">Гироскутер представляет собой конструкцию из 2 колес, расположенных по бокам от наездника и соединенных поперечной планкой-корпусом. Внутри корпуса располагаются электродвигатели, аккумуляторные батареи и гироскопы, поддерживающие в горизонтальном положении площадку для ног. Гироскутеры никогда не оснащаются рукоятками для рук. Устройства из 2 колес, поперечной площадки и рулевого столба называются сигвеями и управляются манипуляциями руками. Особенность управления гироскутером состоит в том, что для движения вперед наезднику необходимо наклониться вперед. Для торможения или движения назад - наклониться назад. Для поворота нужно наклонять корпус в правую или левую сторону.</p>
 		</div>
 	</div>
 	<div class="wrapper">
-		<img src="img/elsam.jpg" width="425px" height="425px" class="content">
-		<span class="p">Электросамокат - современный вариант простого самоката. Для того чтобы на нем кататься, нужно всего один раз оттолкнуться ногой от земли, обеспечив стартовое ускорение. Дальше устройство будет везти хозяина самостоятельно за счет встроенного электромотора. Если выбирать между моноколесом или электросамокатом, последний будет гораздо безопаснее в эксплуатации за счет наличия 2 колес (т.е. 2 точек опоры) и ручки для опоры руками.</span>
+		<img src="img/tov4.jpg" width="425px" height="425px" class="content">
+		<div class="sidebar">
+			<h2 class="h2">Сигвей</h2>
+			<p class="p">Сигвей - средство передвижения для одного человека, которое держит равновесие с помощью специальной автобалансирующей системы. Это своеобразный электрический скутер, самостоятельно удерживающий равновесие. Сигвеи бесшумны в работе, не загрязняют окружающую среду, работают на электрической энергии, накопленной батареей аккумуляторов.</p>
+		</div>
 	</div>
-	<div class="wrapper">
-		<img src="img/gyro.jpg" width="425px" height="425px" class="content">
-		<span class="p">Гироскутер представляет собой конструкцию из 2 колес, расположенных по бокам от наездника и соединенных поперечной планкой-корпусом. Внутри корпуса располагаются электродвигатели, аккумуляторные батареи и гироскопы, поддерживающие в горизонтальном положении площадку для ног. Гироскутеры никогда не оснащаются рукоятками для рук. Устройства из 2 колес, поперечной площадки и рулевого столба называются сигвеями и управляются манипуляциями руками. Особенность управления гироскутером состоит в том, что для движения вперед наезднику необходимо наклониться вперед. Для торможения или движения назад - наклониться назад. Для поворота нужно наклонять корпус в правую или левую сторону.</span>
-	</div>
-	<div class="wrapper">
-		<img src="img/seegway.jpg" width="425px" height="425px" class="content">
-		<span class="p">Сигвей - средство передвижения для одного человека, которое держит равновесие с помощью специальной автобалансирующей системы. Это своеобразный электрический скутер, самостоятельно удерживающий равновесие. Сигвеи бесшумны в работе, не загрязняют окружающую среду, работают на электрической энергии, накопленной батареей аккумуляторов.</span>
-	</div>
+	<!--Таблица доступных товаров-->
 	<center>
 		<p class="table1">
 			<table>
@@ -140,40 +124,62 @@
 			</table>
 		</p>
 	</center>
+	<!--Консультанты-->
 	<center>
 		<table class="consult">
 			<tr>
 				<th></th>
-				<th>Консультанты</th>
+				<th><p class="cons">Консультанты<p></th>
 				<th></th>
 			</tr>
 			<tr>
-				<td align="center"><img src="img/placeholder1.png" width="100px" height="100px"></td>
-				<td align="center"><img src="img/placeholder2.jpg" width="100px" height="100px"></td>
-				<td align="center"><img src="img/placeholder3.jpg" width="100px" height="100px"></td>
+				<td align="center"><img src="img/placeholder1.png" width="130px" height="130px"></td>
+				<td align="center"><img src="img/placeholder2.jpg" width="130px" height="130px"></td>
+				<td align="center"><img src="img/placeholder3.jpg" width="130px" height="130px"></td>
 			</tr>
 			<tr>
-				<td align="center"><p>Захаров Андрей Борисович</p></td>
-				<td align="center"><p>Пупкин Василий Васильевич</p></td>
-				<td align="center"><p>Иванов Иван Иванович</p></td>
+				<td align="center"><p class="cons">Захаров Андрей Борисович</p></td>
+				<td align="center"><p class="cons">Пупкин Василий Васильевич</p></td>
+				<td align="center"><p class="cons">Иванов Иван Иванович</p></td>
 			</tr>
 			<tr>
-				<td width=300px align="center"><p>Менеджер-консультант My Gyro</p></td>
-				<td width=300px align="center"><p>Старший консультант My Gyro</p></td>
-				<td width=300px align="center"><p>Квалифицированный специалист сервисного центра My Gyro</p></td>
+				<td width=300px align="center"><p class="cons">Менеджер-консультант My Gyro</p></td>
+				<td width=300px align="center"><p class="cons">Старший консультант My Gyro</p></td>
+				<td width=300px align="center"><p class="cons">Квалифицированный специалист сервисного центра My Gyro</p></td>
 			</tr>
 		</table>
 	</center>
-	<center><img src="img/personal.jpg" width=1920px height=428px></center>
+	<!--Бренды-->
+	<div align="center"><h2>Бренды</h2></div>
+	<div align="center">
+		<table class="gucci">
+			<tr>
+				<td align="center"><img src="img/brand/br1.jpg" width="75%" height="75%"></td>
+				<td align="center"><img src="img/brand/br2.jpg" width="75%" height="75%"></td>
+				<td align="center"><img src="img/brand/br3.jpg" width="75%" height="75%"></td>
+				<td align="center"><img src="img/brand/br4.jpg" width="75%" height="75%"></td>
+				<td align="center"><img src="img/brand/br5.jpg" width="75%" height="75%"></td>
+				<td align="center"><img src="img/brand/br6.jpg" width="75%" height="75%"></td>
+				<td align="center"><img src="img/brand/br7.jpg" width="75%" height="75%"></td>
+				<td align="center"><img src="img/brand/br8.jpg" width="75%" height="75%"></td>
+				<td align="center"><img src="img/brand/br9.jpg" width="75%" height="75%"></td>
+				<td align="center"><img src="img/brand/br10.jpg" width="75%" height="75%"></td>
+			</tr>
+		</table>
+	</div>
+	<!--Прочее-->
+	<center><img src="img/personal.jpg" width=100% height="auto"></center>
 	<center><p class="per">Чтобы работать в наших магазинах нужно знать каждую модель, её плюсы и минусы и уметь ездить на ней. Да, это долго, и кто-то скажет, что неэффективно. Но так мы гарантированно получаем сотрудника, который разбирается в каждом товаре и сможет по-настоящему помочь покупателю, а не “впихнуть” ему, что-нибудь подороже.</p></center>
 	<center><p class="per">Наш магазин работает с 2016 года. Мы представлены в таких городах как Екатеринбург, Москва и Челябинск и многие другие. В среднем мы отправляем по 15-20 заказов в день в разные города и регионы по всей России. Мы имеем свои сервисные центры и собственных мастеров, благодаря которым, выполняем гарантийные работы качественно и в срок. Так же вы можете обратиться к нам с любой проблемой. Мастера выполнят диагностику и выполнят ремонт.</p></center>
-	<!--LiveInternet counter-->
-	<a href="https://www.liveinternet.ru/click"target="_blank">
-		<img id="licnt7C78" width="88" height="31" style="border:0" title="LiveInternet: показано число просмотров и посетителей за 24 часа"src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"alt=""/>
-	</a>
-	<script>
-		(function(d,s){d.getElementById("licnt7C78").src="https://counter.yadro.ru/hit?t52.6;r"+escape(d.referrer)+((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+(s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)
-	</script>
-	<!--/LiveInternet-->
+	<!--Поле подписки-->
+	<div class="container" align="center">
+		<p><label for="email"><b>ФИО</b></label></p>
+		<p><input type="text" placeholder="Ковид Тигрович Тамачмян" name="ФИО" required></p>
+		<p><label for="email"><b>E-mail</b></label></p>
+		<p><input type="text" placeholder="пиши свою почту, нагибатор1337" name="email" required></p>
+		<button type="submit" class="subscribe"><img src="img/subscribe.png" width="200px" height="50px"></button>
+	</div>
+	<!--Кнопка "Назад"-->
+	<div align="center"><a href="#"><img src="img/back.png" width=50px height=50px></a></div>
 </body>
 </html>

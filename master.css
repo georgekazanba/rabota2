@@ -32,41 +32,40 @@ header{
 .carousel-wrapper{
 	height:75px;
 	position:relative;
-	width:400px;
 	margin:0 auto;
-	border:solid 1px;
-	margin-bottom:50px;
+	border:solid 0px;
+	margin-bottom:100px;
+	width:1600px;
 }
 /*Свойства содержания блоков слайдера*/
 .carousel-item{
 	position:absolute;
-	top:0;
-	bottom:0;
-	left:0;
-	right:0;
 	opacity:0;
 	transition:all 0.5s ease-in-out;
 	margin:0 auto;
 	vertical-align:middle;
+	margin-left:auto;
+	margin-right:auto;
+	width:1600px;
 }
 /*Свойства стрелок*/
 .arrow{
-  border:solid black;
-  border-width:0 3px 3px 0;
-  display:inline-block;
-  padding:12px;
+	border:solid black;
+	border-width:0 3px 3px 0;
+	display:inline-block;
+	padding:12px;
 }
 .arrow-prev{
-  left:-30px;
-  position:absolute;
-  top:50%;
-  transform:translateY(-50%) rotate(135deg);
+	left:-30px;
+	position:absolute;
+	top:50%;
+	transform:translateY(-50%) rotate(135deg);
 }
 .arrow-next{
-  right:-30px;
-  position:absolute;
-  top:50%;
-  transform:translateY(-50%) rotate(-45deg);
+	right:-30px;
+	position:absolute;
+	top:50%;
+	transform:translateY(-50%) rotate(-45deg);
   }
 /*Я хз*/
 [id^="item"] {
@@ -86,34 +85,90 @@ header{
     z-index: 3;
     opacity: 1;
 }
+.car-text{
+	font-size:28px;
+	text-align:center;
+	font-family:helvetica;
+	font-weight:bolder;
+}
 /*Свойства блоков с фото техники и её описанием*/
 .wrapper{
 	margin:0 auto;
 	margin-bottom:50px;
 	display:flex;
+	width:95%;
 }
 /*Свойства изображений*/
 .content{
 	float:left;
-	margin-right:50px;
+	margin-right:0px;
 	margin-left:50px;
 	align-items:center;
 }
-/*Свойства текста*/
+/*Свойства блока с текстом*/
+.sidebar{
+	float:left;
+}
+/*Свойства текста в блоках*/
 .p{
-	width:1100px;
+	font-size:25px;
+	display:flex;
+	align-items:center;
+	text-align:left;
+	width:95%;
+	float:right;
+	font-family:helvetica;
+}
+.h2{
 	font-size:27px;
 	display:flex;
 	align-items:center;
 	text-align:left;
+	width:95%;
+	float:right;
+	font-family:helvetica;
 }
+/*Товары*/
 .table1{
 	margin:0;
 	margin-left:auto;
 	margin-right:auto;
 }
+/*консультанты*/
+.consult{
+	margin-top:5%;
+	margin-bottom:5%;
+}
+.cons{
+	font-family:helvetica;
+	font-size:16px;
+}
 .per{
-	width:1600px;
+	width:90%;
 	font-size:28px;
-	text-align:left;
+	font-family:helvetica;
+}
+.container{
+	padding:16px;
+}
+/*Оформления полей ввода*/
+input[type=text]{
+	width:450px;
+	padding:15px;
+	margin:5px 0 22px 0;
+	display:inline-block;
+	border:none;
+	background:#f1f1f1;
+}
+input[type=text]:focus{
+  background-color:#ddd;
+  outline:none;
+}
+/*Оформление кнопки подписки*/
+.subscribe{
+	padding:16px 20px;
+	margin:8px 0;
+	border:none;
+	cursor:pointer;
+	width:auto;
 }

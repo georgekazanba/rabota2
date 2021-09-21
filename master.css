@@ -85,6 +85,7 @@ header{
     z-index: 3;
     opacity: 1;
 }
+/*Свойства текста в слайдере*/
 .car-text{
 	font-size:28px;
 	text-align:center;
@@ -128,25 +129,19 @@ header{
 	float:right;
 	font-family:helvetica;
 }
-/*Товары*/
-.container{
-	width:90%;
-	margin:0 auto;
-	margin-bottom:50px;
-}
-/*консультанты*/
-.table{
-	margin-top:25%;
-	margin-bottom:5%;
-}
 .cons{
-	font-family:helvetica;
+	font-family:trebuchet ms;
 	font-size:16px;
 }
 .per{
 	width:90%;
 	font-size:28px;
-	font-family:helvetica;
+	font-family:trebuchet ms;
+}
+/*консультанты*/
+.table{
+	margin-top:7%;
+	margin-bottom:5%;
 }
 /*Свойство блока с полем подписки*/
 .cont{
@@ -172,4 +167,16 @@ input[type=text]:focus{
 	border:none;
 	cursor:pointer;
 	width:auto;
+}
+h1{
+	margin-top:10%;
+}
+/*Задаю тексту шрифт отдельным псевдоклассом, потому что могу*/
+.trms{
+	font-family:trebuchet ms;
+}
+/*Тоже самое, но жирнее*/
+.trms2{
+	font-family:trebuchet ms;
+	font-weight:bolder;
 }

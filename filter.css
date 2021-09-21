@@ -1,0 +1,71 @@
+.container{
+	width:90%;
+	margin:0 auto;
+	margin-bottom:50px;
+}
+h1{
+	text-align:center;
+}
+input[type="radio"] {
+    display:none;
+}
+label{
+	width:20%;
+	float:left;
+	text-align:center;
+	background:#ffffff;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+	color:#222222;
+	padding:0.5%;
+	margin:0.5%;
+	margin-bottom:30px;
+	cursor:pointer;
+}
+input[type="radio"][id="gyro"]:checked + label{
+	background:#6666ff;
+}
+input[type="radio"][id="gyro"]:checked ~ .seeg, input[type="radio"][id="gyro"]:checked ~ .elsam{
+	width:0;
+	height:0;
+	padding:0;
+	margin:0;
+	opacity:0;
+}
+input[type="radio"][id="seeg"]:checked + label{
+  background:#ff4466;
+}
+input[type="radio"][id="seeg"]:checked ~ .gyro, input[type="radio"][id="seeg"]:checked ~ .elsam{
+	width:0;
+	height:0;
+	padding:0;
+	margin:0;
+	opacity:0;
+}
+input[type="radio"][id="elsam"]:checked + label{
+	background:#66dd99;
+}
+input[type="radio"][id="elsam"]:checked ~ .gyro, input[type="radio"][id="elsam"]:checked ~ .seeg{
+	width:0;
+	height:0;
+	padding:0;
+	margin:0;
+	opacity:0;
+}
+
+.tile{
+	width:20%;
+	height:100px;
+	float:left;
+	transition:all 1s;
+	margin:0.5%;
+	padding:0.5%;
+}
+.elsam{
+	background:#66dd99;
+}
+.gyro{
+	background:#6666ff;
+}
+.seeg{
+	background:#ff4466;
+}

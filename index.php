@@ -1,4 +1,4 @@
-<!Doctype>
+<!Doctype html>
 <html lang="ru">
 <head>
 	<!--Ссылка на файлы со свойствами элементов сайта-->

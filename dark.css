@@ -1,0 +1,229 @@
+body{
+	margin:0 auto;
+	background-color:#0E0E0E;
+}
+/*Свойства верзхней панели сайта*/
+header{
+	background-color:#06000C;
+	display:flex;
+	justify-content: space-between;
+	width:auto;
+}
+h1{
+	margin-top:10%;
+	color:white;
+}
+/*Свойства лого компании*/
+.logo{
+	display:flex;
+}
+/*Свойства картинки телефона и номера телефона*/
+.logo2{
+	display:flex;
+	align-items:center;
+	margin-right:75px;
+}
+/*Свойства картинки с телефоном*/
+.logo-img2{
+	margin-right:25px;
+}
+/*Свойства номера телефона*/
+.logo-title{
+	font-family:helvetica;
+	color:white;
+	font-weight:bolder;
+}
+/*Свойства кнопки переключения тем*/
+.theme-button{
+	position:absolute;
+	right:5px;
+	top:5px;
+	display:inline-block;
+	cursor:pointer;
+	color:white;
+	font-family:trebuchet ms;
+	background:#4e4e4e;
+	padding:10px 25px;
+}
+.theme-button:hover{
+	background:#c8c8c8;
+}
+/*Свойства хотбара с разделами сайта*/
+.head2{
+	background-color:#4E4E4E;
+	display:flex;
+	justify-content: space-between;
+	margin-bottom:25px;
+	width:auto;
+	padding-left:10%;
+	padding-right:10%;
+	height:32px;
+	vertical-align:middle;
+}
+.jakor{
+	color:#C8C8C8;
+	text-decoration:none;
+	font-family:trebuchet ms;
+	font-size:24px;
+}
+/*Свойства блоков слайдера*/
+.carousel-wrapper{
+	height:75px;
+	position:relative;
+	margin:0 auto;
+	border:solid 0px;
+	margin-bottom:100px;
+	width:1600px;
+}
+/*Свойства содержания блоков слайдера*/
+.carousel-item{
+	position:absolute;
+	opacity:0;
+	transition:all 0.5s ease-in-out;
+	margin:0 auto;
+	vertical-align:middle;
+	margin-left:auto;
+	margin-right:auto;
+	width:1600px;
+}
+/*Свойства стрелок*/
+.arrow{
+	border:solid white;
+	border-width:0 3px 3px 0;
+	display:inline-block;
+	padding:12px;
+}
+.arrow-prev{
+	left:-30px;
+	position:absolute;
+	top:50%;
+	transform:translateY(-50%) rotate(135deg);
+}
+.arrow-next{
+	right:-30px;
+	position:absolute;
+	top:50%;
+	transform:translateY(-50%) rotate(-45deg);
+  }
+/*Я хз*/
+[id^="item"] {
+    display: none;
+  }
+.item-1{
+    z-index: 2;
+    opacity: 1;
+}
+*:target ~ .item-1 {
+    opacity: 0;
+}
+#item-1:target ~ .item-1 {
+    opacity: 1;
+}
+#item-2:target ~ .item-2, #item-3:target ~ .item-3, #item-4:target ~ .item-4 {
+    z-index: 3;
+    opacity: 1;
+}
+/*Свойства текста в слайдере*/
+.car-text{
+	font-size:28px;
+	text-align:center;
+	font-family:helvetica;
+	font-weight:bolder;
+	color:white;
+}
+/*Свойства блоков с фото техники и её описанием*/
+.wrapper{
+	margin:0 auto;
+	margin-bottom:50px;
+	display:flex;
+	width:95%;
+}
+/*Свойства изображений*/
+.content{
+	float:left;
+	margin-right:0px;
+	margin-left:50px;
+	align-items:center;
+}
+/*Свойства блока с текстом*/
+.sidebar{
+	float:left;
+}
+/*Свойства текста в блоках*/
+.p{
+	font-size:25px;
+	display:flex;
+	align-items:center;
+	text-align:left;
+	width:95%;
+	float:right;
+	font-family:helvetica;
+	color:white;	
+}
+.h2{
+	font-size:27px;
+	display:flex;
+	align-items:center;
+	text-align:left;
+	width:95%;
+	float:right;
+	font-family:helvetica;
+	color:white;
+}
+.per{
+	width:90%;
+	font-size:28px;
+	font-family:trebuchet ms;
+	margin-top:-0.5%;
+	color:white;
+}
+/*консультанты*/
+.table{
+	margin-top:7%;
+	margin-bottom:5%;
+}
+/*Свойство блока с полем подписки*/
+.cont{
+	padding:16px;
+}
+/*Оформления полей ввода*/
+input[type=text]{
+	width:450px;
+	padding:15px;
+	margin:5px 0 22px 0;
+	display:inline-block;
+	border:none;
+	background:#f1f1f1;
+}
+input[type=text]:focus{
+  background-color:#ddd;
+  outline:none;
+}
+/*Оформление кнопки подписки*/
+.subscribe{
+	padding:16px 20px;
+	margin:8px 0;
+	border:none;
+	cursor:pointer;
+	width:auto;
+	background-color:#0E0E0E;
+}
+/*Задаю тексту шрифт отдельным псевдоклассом, потому что могу*/
+.trms{
+	font-family:trebuchet ms;
+	color:white;
+}
+/*Тоже самое, но жирнее*/
+.trms2{
+	font-family:trebuchet ms;
+	font-weight:bolder;
+	color:white;
+}
+/*Ладно, для товаров отдельно*/
+.toivo{
+	font-family:trebuchet ms;
+}
+.toivo2{
+	font-family:trebuchet ms;
+	font-weight:bolder;
+}

@@ -13,6 +13,9 @@ if (!isset($_SESSION["theme"])) {
 	<!--Ссылка на файлы со свойствами элементов сайта-->
 	<link rel="stylesheet" href="<?php echo $_SESSION["theme"]?>.css" id="theme-link">
 	<link rel="stylesheet" href="filter.css">
+	<meta name="yandex-verification" content="f48a3f43088c2e7a" />
+	<meta name="google-site-verification" content="JFbt376imZGe-4kXa1G-0ciutOMkI76TXGcCJqN6_LA" />
+	<meta name='wmail-verification' content='dea08b3f096034b918554155f855147f' />
 </head>
 <body>
 	<header>

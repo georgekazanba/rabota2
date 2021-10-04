@@ -1,8 +1,11 @@
 <?php
 session_start();
 
-if (!isset($_SESSION["theme"])) {
-    $_SESSION["theme"]="main";
+//isset проверяет массив на существованиие элемента "тема". если элемента нет, то...
+if (!isset($_SESSION["theme"]))
+{
+	//... он создаётся и получает значение "main"
+	$_SESSION["theme"]="main";
 }
 ?>
 <!DOCTYPE>
@@ -11,11 +14,9 @@ if (!isset($_SESSION["theme"])) {
 	<meta charset="utf-8">
 	<title>My-Giro</title>
 	<!--Ссылка на файлы со свойствами элементов сайта-->
+	<!--echo запрашивает значение переменной из массива-->
 	<link rel="stylesheet" href="<?php echo $_SESSION["theme"]?>.css" id="theme-link">
 	<link rel="stylesheet" href="filter.css">
-	<meta name="yandex-verification" content="f48a3f43088c2e7a" />
-	<meta name="google-site-verification" content="JFbt376imZGe-4kXa1G-0ciutOMkI76TXGcCJqN6_LA" />
-	<meta name='wmail-verification' content='dea08b3f096034b918554155f855147f' />
 </head>
 <body>
 	<header>
@@ -25,7 +26,7 @@ if (!isset($_SESSION["theme"])) {
 		</div>
 		<!--Номер телефона компании и кнопка переключения темы-->		
 		<div class="logo2">
-			<img src="img/call.png" class="logo-img2" height=55px width=55px>
+			<img src="img/call.png" class="logo-img2">
 			<span class="logo-title">+7 351 111 22 33</span>
 			<div class="theme-button" id="theme-button">Сменить тему<div>
 		</div>
@@ -94,18 +95,18 @@ if (!isset($_SESSION["theme"])) {
 	<!--Бренды-->
 	<div align="center" id="brands"><h2 class="trms">Бренды</h2></div>
 	<div align="center">
-		<table class="gucci">
+		<table>
 			<tr>
-				<td align="center"><img src="img/brand/br1.jpg" width="75%" height="75%"></td>
-				<td align="center"><img src="img/brand/br2.jpg" width="75%" height="75%"></td>
-				<td align="center"><img src="img/brand/br3.jpg" width="75%" height="75%"></td>
-				<td align="center"><img src="img/brand/br4.jpg" width="75%" height="75%"></td>
-				<td align="center"><img src="img/brand/br5.jpg" width="75%" height="75%"></td>
-				<td align="center"><img src="img/brand/br6.jpg" width="75%" height="75%"></td>
-				<td align="center"><img src="img/brand/br7.jpg" width="75%" height="75%"></td>
-				<td align="center"><img src="img/brand/br8.jpg" width="75%" height="75%"></td>
-				<td align="center"><img src="img/brand/br9.jpg" width="75%" height="75%"></td>
-				<td align="center"><img src="img/brand/br10.jpg" width="75%" height="75%"></td>
+				<td align="center"><img src="img/brand/br1.jpg" width="75%" height="75%" class="ad"></td>
+				<td align="center"><img src="img/brand/br2.jpg" width="75%" height="75%" class="ad"></td>
+				<td align="center"><img src="img/brand/br3.jpg" width="75%" height="75%" class="ad"></td>
+				<td align="center"><img src="img/brand/br4.jpg" width="75%" height="75%" class="ad"></td>
+				<td align="center"><img src="img/brand/br5.jpg" width="75%" height="75%" class="ad"></td>
+				<td align="center"><img src="img/brand/br6.jpg" width="75%" height="75%" class="ad"></td>
+				<td align="center"><img src="img/brand/br7.jpg" width="75%" height="75%" class="ad"></td>
+				<td align="center"><img src="img/brand/br8.jpg" width="75%" height="75%" class="ad"></td>
+				<td align="center"><img src="img/brand/br9.jpg" width="75%" height="75%" class="ad"></td>
+				<td align="center"><img src="img/brand/br10.jpg" width="75%" height="75%" class="ad"></td>
 			</tr>
 		</table>
 	</div>
@@ -175,7 +176,7 @@ if (!isset($_SESSION["theme"])) {
 				<td align="center"><img src="img/placeholder3.jpg" width="200px"></td>
 			</tr>
 			<tr>
-				<td align="center"><p class="trms2">Захаров Андрей Борисович</p></td>
+				<td align="center"><p class="trms2">Блинов Захар Андреевич</p></td>
 				<td align="center"><p class="trms2">Пупкин Василий Васильевич</p></td>
 				<td align="center"><p class="trms2">Иванов Иван Иванович</p></td>
 			</tr>
@@ -196,7 +197,7 @@ if (!isset($_SESSION["theme"])) {
 		<button type="submit" class="subscribe"><img src="img/subscribe.png" width="200px" height="50px"></button>
 	</div>
 	<!--Кнопка "Назад"-->
-	<div align="center"><a href="#"><img src="img/back.png" width=50px height=50px></a></div>
+	<a href="#"><img src="img/back.png" class="topbtn" width=50px height=50px></a>
 	<script src="theme.js" type="text/javascript" language="JScript"></script>
 </body>
 </html>

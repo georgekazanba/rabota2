@@ -1,29 +1,29 @@
 body{
 	margin:0 auto;
 }
-/*Свойства верзхней панели сайта*/
+/*Свойства верхней панели сайта*/
 header{
 	background-color:#06000C;
 	display:flex;
 	justify-content: space-between;
-	width:auto;
+	width:100%;
 }
 h1{
-	margin-top:10%;
+	margin-top:7%;
 }
 /*Свойства лого компании*/
 .logo{
-	display:flex;
+	display:flex; /*Расположение элменета во всю ширину шапки*/
 }
 /*Свойства картинки телефона и номера телефона*/
 .logo2{
 	display:flex;
-	align-items:center;
-	margin-right:75px;
+	align-items:center; /*Центрирование по поперечной оси*/
+	margin-right:20px; /*Внешняя рамка справа*/
 }
 /*Свойства картинки с телефоном*/
 .logo-img2{
-	margin-right:25px;
+	margin-right:25px; /*Внешняя рамка справа*/
 }
 /*Свойства номера телефона*/
 .logo-title{
@@ -31,47 +31,50 @@ h1{
 	color:white;
 	font-weight:bolder;
 }
-/*Свойства кнопки переключения тем*/
+/*Свойства кнопки переключения тем без курсора и с ним*/
 .theme-button{
 	position:absolute;
-	right:5px;
-	top:5px;
-	display:inline-block;
-	cursor:pointer;
+	right:5px; /*Отступ от правого блока*/
+	top:5px; /*Отступ от верха*/
+	display:inline-block; /*Обтекание вокруг кнопки*/
+	cursor:pointer; /*Вид курсора при наведении*/
 	color:white;
 	font-family:trebuchet ms;
 	background:#4e4e4e;
-	padding:10px 25px;
+	padding:10px 25px; /*Внутренние отступы*/
+	border-radius:25px; /*Края рамки*/
 }
+/*Смена цвета кнопки при наведении курсора*/
 .theme-button:hover{
-	background:#c8c8c8;
+	background:#c8c8c8; 
 }
 /*Свойства хотбара с разделами сайта*/
 .head2{
-	background-color:#4E4E4E;
-	display:flex;
-	justify-content: space-between;
-	margin-bottom:25px;
-	width:auto;
-	padding-left:10%;
-	padding-right:10%;
+	background-color:#00ffa2;
+	display:flex; /*Расположение элменета во всю ширину шапки*/
+	justify-content: space-between; /*РАвномерное расположение флекс-элементов по всей ширине*/
+	margin-bottom:25px; /*Отступ снизу*/
+	width:auto; /*Ширина автоматически задаётся шириной окна*/
+	padding-left:10%; /*Внутренний отступ слева*/
+	padding-right:10%; /*Внутренний отступ справа*/
 	height:32px;
-	vertical-align:middle;
+	vertical-align:middle; /*Вертикальное выравнивание по центру*/
 }
+/*Свойства якорей*/
 .jakor{
-	color:#C8C8C8;
-	text-decoration:none;
+	color:#008f57;
+	text-decoration:none; /*Нед подчёркиваний*/
 	font-family:trebuchet ms;
 	font-size:24px;
 }
 /*Свойства блоков слайдера*/
 .carousel-wrapper{
 	height:75px;
-	position:relative;
-	margin:0 auto;
-	border:solid 0px;
+	position:relative; /*Изменение положение элементов в зависимости относительно исходного места*/
+	margin:0 auto; /*Внешние отступы*/
+	border:solid 0px; /*Нет рамки*/
 	margin-bottom:100px;
-	width:1600px;
+	width:90%; /*Ширина равна 90% от ширины всего сайта*/
 }
 /*Свойства содержания блоков слайдера*/
 .carousel-item{
@@ -79,10 +82,10 @@ h1{
 	opacity:0;
 	transition:all 0.5s ease-in-out;
 	margin:0 auto;
-	vertical-align:middle;
+	vertical-align:middle; /*Вертикальное выравнивание по центру*/
 	margin-left:auto;
 	margin-right:auto;
-	width:1600px;
+	width:100%; /*Ширина элементов слайдера равна 100% от ширины самого слайдера*/
 }
 /*Свойства стрелок*/
 .arrow{
@@ -102,22 +105,22 @@ h1{
 	position:absolute;
 	top:50%;
 	transform:translateY(-50%) rotate(-45deg);
-  }
+}
 /*Я хз*/
-[id^="item"] {
+[id^="item"]{
     display: none;
-  }
+}
 .item-1{
     z-index: 2;
     opacity: 1;
 }
-*:target ~ .item-1 {
+*:target ~ .item-1{
     opacity: 0;
 }
-#item-1:target ~ .item-1 {
+#item-1:target ~ .item-1{
     opacity: 1;
 }
-#item-2:target ~ .item-2, #item-3:target ~ .item-3, #item-4:target ~ .item-4 {
+#item-2:target ~ .item-2, #item-3:target ~ .item-3, #item-4:target ~ .item-4{
     z-index: 3;
     opacity: 1;
 }
@@ -137,34 +140,35 @@ h1{
 }
 /*Свойства изображений*/
 .content{
-	float:left;
+	float:left; 
 	margin-right:0px;
 	margin-left:50px;
 	align-items:center;
 }
 /*Свойства блока с текстом*/
 .sidebar{
-	float:left;
+	float:left; /*Обтекание с левой стороны*/
 }
 /*Свойства текста в блоках*/
 .p{
 	font-size:25px;
-	display:flex;
-	align-items:center;
-	text-align:left;
+	display:flex; /*Расположение текста по всей ширине блока*/
+	align-items:center; 
+	text-align:left; /*Выравнивание по левому краю*/
 	width:95%;
-	float:right;
+	float:right; /*Обтекание по правой стороне*/
 	font-family:helvetica;
 }
 .h2{
 	font-size:27px;
-	display:flex;
-	align-items:center;
-	text-align:left;
+	display:flex; /*Расположение текста по всей ширине блока*/
+	align-items:center; 
+	text-align:left; /*Выравнивание по левому краю*/
 	width:95%;
-	float:right;
+	float:right; /*Обтекание по правой стороне*/
 	font-family:helvetica;
 }
+/*"О нас"*/
 .per{
 	width:90%;
 	font-size:28px;
@@ -180,7 +184,7 @@ h1{
 .cont{
 	padding:16px;
 }
-/*Оформления полей ввода*/
+/*Оформление полей ввода*/
 input[type=text]{
 	width:450px;
 	padding:15px;
@@ -189,18 +193,20 @@ input[type=text]{
 	border:none;
 	background:#f1f1f1;
 }
+/*Оформление полей ввода (с курсором)*/
 input[type=text]:focus{
   background-color:#ddd;
-  outline:none;
+  outline:none; /*Нет обводки при вводе в поле*/
+}
+.ad{
+	border-radius:27%; /*Рамка изображений брендов*/
 }
 /*Оформление кнопки подписки*/
 .subscribe{
-	padding:16px 20px;
-	margin:8px 0;
-	border:none;
-	cursor:pointer;
-	width:auto;
-	background-color:white;
+	border:none; /*Нет рамки объекта*/
+	cursor:pointer; /*Изменение иконки курсора*/
+	width:auto; /*Ширина кнопки равна ширине изображения*/
+	background-color:transparent; /*Нет цвета кнопки*/
 }
 /*Задаю тексту шрифт отдельным псевдоклассом, потому что могу*/
 .trms{
@@ -218,4 +224,12 @@ input[type=text]:focus{
 .toivo2{
 	font-family:trebuchet ms;
 	font-weight:bolder;
+}
+/*свойства кнопки "вверх"*/
+.topbtn{
+	display:block; /*Кнопка - отдельный блок*/
+	position:fixed; /*Кнопка зафиксирована в одном положении*/
+	right:1%; /*Отступ от правого блока*/
+	bottom:3%; /*Отступ от низа*/
+	z-index:99999; /*Кнопка находится выше остального сайта*/
 }

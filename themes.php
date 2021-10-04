@@ -1,11 +1,17 @@
 <?php
 session_start();
 
-if (isset($_GET["theme"])) {
-    $theme = $_GET["theme"];
+//isset проверяет переменную, переданную через URL ($_GET)
+if (isset($_GET["theme"]))
+{
+	//значеине переменной $_GET заменяется на значение переменной "тема"
+	$theme = $_GET["theme"];
 
-    if($theme == "main" || $theme == "dark") {
-        $_SESSION["theme"] = $theme;
-    }
+	//если значение переменной "тема" равна одному из двух слов...
+	if($theme == "main" || $theme == "dark")
+	{
+		//значение элемента из массива заменяется на значение переменной "тема" 
+		$_SESSION["theme"] = $theme;
+	}
 }
 ?>
